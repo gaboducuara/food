@@ -28,6 +28,7 @@ public class ListAllFoodStallServiceImpl implements ListAllFoodStallService {
         return foodStallRepository.findByUserStatusNot(UserStatus.INACTIVE, pageable).map(UserMapper::mapToFoodStallDto);
     }
 
+    /*
     @Service
     public static class CreateFoodServiceImpl implements CreateFoodService {
 
@@ -57,4 +58,6 @@ public class ListAllFoodStallServiceImpl implements ListAllFoodStallService {
             return foodDto;
         }
     }
+
+     */
 }
